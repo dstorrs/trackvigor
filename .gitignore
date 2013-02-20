@@ -1,0 +1,12 @@
+*~
+out
+foo
+*.save
+*.orig
+*.distrib
+*.gz
+*.tgz
+*.bz2
+*.tbz2
+*.tar
+TODO.org
