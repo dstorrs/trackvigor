@@ -10,3 +10,4 @@ foo
 *.tbz2
 *.tar
 TODO.org
+.bin
