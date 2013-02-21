@@ -9,80 +9,75 @@
 
     <!-- CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/css/main.css" rel="stylesheet">
     <style type="text/css">
 
-      /* Sticky footer styles
-      -------------------------------------------------- */
+/* Sticky footer styles
+-------------------------------------------------- */
 
-      html,
-      body {
-      height: 100%;
-      /* The html and body elements cannot have any padding or margin. */
-      }
+html,
+body {
+	height: 100%;
+											          /* The html and body elements cannot have any padding or margin. */
+				 }
+	 
+											        /* Wrapper for page content to push down footer */
+											        #wrap {
+					   min-height: 100%;
+		height: auto !important;
+  height: 100%;
+											          /* Negative indent footer by it's height */
+											          margin: 0 auto -60px;
+				 }
+	 
+											        /* Set the fixed height of the footer here */
+											        #push,
+											        #footer {
+					   height: 60px;
+	}
+ #footer {
+	 background-color: #f5f5f5;
+}
 
-      /* Wrapper for page content to push down footer */
-      #wrap {
-      min-height: 100%;
-      height: auto !important;
-      height: 100%;
-      /* Negative indent footer by it's height */
-      margin: 0 auto -60px;
-      }
-
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-      height: 60px;
-      }
-      #footer {
-      background-color: #f5f5f5;
-      }
-
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-      #footer {
-      margin-left: -20px;
-      margin-right: -20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      }
-      }
+											        /* Lastly, apply responsive CSS fixes as necessary */
+											        @media (max-width: 767px) {
+					   #footer {
+			margin-left: -20px;
+   margin-right: -20px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+}
 
 
 
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+				   
+#wrap > .container {
+padding-top: 60px;
+}
+.container .credit {
+margin: 20px 0;
+}
 
-      #wrap > .container {
-      padding-top: 60px;
-      }
-      .container .credit {
-      margin: 20px 0;
-      }
-
-      code {
-      font-size: 80%;
-      }
+code {
+	font-size: 80%;
+}
 
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-		<script src="../assets/js/html5shiv.js"></script>
-		<![endif]-->
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-		  href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-		  href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-		  href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed"
-		  href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
@@ -107,17 +102,17 @@
                 <li class="active"><a href="home.html#">Home</a></li>
                 <!-- <li><a href="home.html#contact">@@TODO: Email Dks2 a bug / feature request</a></li>-->
                 <!-- <li class="dropdown">
-					 <a href="home.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					 <ul class="dropdown-menu">
-                       <li><a href="home.html#">Action</a></li>
-                       <li><a href="home.html#">Another action</a></li>
-                       <li><a href="home.html#">Something else here</a></li>
-                       <li class="divider"></li>
-                       <li class="nav-header">Nav header</li>
-                       <li><a href="home.html#">Separated link</a></li>
-                       <li><a href="home.html#">One more separated link</a></li>
-					 </ul>
-                  </li> -->
+                  <a href="home.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="home.html#">Action</a></li>
+                    <li><a href="home.html#">Another action</a></li>
+                    <li><a href="home.html#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="home.html#">Separated link</a></li>
+                    <li><a href="home.html#">One more separated link</a></li>
+                  </ul>
+                </li> -->
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -130,7 +125,7 @@
           <h1>TrackVigor: Easy Medical Records</h1>
         </div>
 
-		<div id="stats-div">
+		<div id="stats">
 		  <table id="stats-table">
 			<thead>
 			  <tr>
@@ -157,10 +152,10 @@
 				<td>183</td>
 			  </tr>
 			</tbody>
-		  </table>
-		</div> <!-- stats-div />
-      </div>
-
+		  </table>		  
+		</div><!-- /stats -->
+      </div><!-- /container -->
+	  
       <div id="push"></div>
     </div>
 
@@ -173,7 +168,7 @@
 
 
     <!-- Le javascript
-		 ================================================== -->
+    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
