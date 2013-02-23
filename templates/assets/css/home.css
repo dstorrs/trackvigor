@@ -14,11 +14,3 @@ code {
 	font-size: 80%;
 }
 
-#stats-table, #stats-table th, #stats-table td {
-	border-collapse: collapse;
- border: 1px solid black;
- padding: 3px;
- text-align: center;
-}
-#stats-table th#notes { width: 40em }
-#stats-table tr:nth-child(2n) {background-color: #F3F5D5}
