@@ -582,9 +582,9 @@
 	
 	
 	
-    <!-- Le javascript
-		 ================================================== -->
+    <!-- ========================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ========================================================== -->
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
     <script src="../assets/js/bootstrap-alert.js"></script>
@@ -598,19 +598,40 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-	<script language="javascript" src="/assets/js/jquery.js"></script>
 	<script language="javascript" src="/assets/js/jquery.dataTables.js"></script>
+	<script language="javascript" src="/assets/js/jquery.jeditable.js"></script>
 	<script type="text/javascript" charset="utf-8">
-	  $(document).ready(function() {
-		  $('#example').dataTable({
-			  "bPaginate" : true,
-			  "bLengthChange" : true,
-			  "bFilter" : true,
-			  "bSort" : true,
-			  "bInfo" : true,
-			  "bAutoWidth" : true,
-		  });
-	  } );
+	$(document).ready(function() {
+		var data_table = $('#example').dataTable({
+			"bPaginate" : true,
+			"bLengthChange" : true,
+			"bFilter" : true,
+			"bSort" : true,
+			"bInfo" : true,
+			"bAutoWidth" : true,
+		});
+		$("td").each(function(index){
+			console.log( index + ": " + $(this).text() );
+		});
+		data_table.$('td').editable(
+			'/home/edit', {
+				"callback": function( sValue, y ) {
+					console.log("IN EDITABLE CALLBACK");
+					var aPos = data_table.fnGetPosition( this );
+					data_table.fnUpdate( sValue, aPos[0], aPos[1] );
+				},
+				"submitdata": function ( value, settings ) {
+					console.log("IN EDITABLE SUBMIT");
+					return {
+						"row_id": this.parentNode.getAttribute('id'),
+						"column": data_table.fnGetPosition( this )[2]
+					};
+				},
+				"height": "14px",
+				"width": "100%"
+			}
+		);
+	  });
 	</script>
   </body>
 </html>

@@ -12,4 +12,7 @@ function onRequest(req, resp){
 }
 
 http.createServer(onRequest).listen(port);
-console.log("\nServer started and listening on port " + port + "...\n");
+
+console.log("\n\tSTART: ");
+console.log(new Date());
+console.log("Server started and listening on port " + port + "...\n");
