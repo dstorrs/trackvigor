@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Home &middot; TrackVigor </title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Home &middot; TrackVigor </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="David K. Storrs">
 
     <!-- CSS -->
+    <link href="/css/editablegrid.css" rel="stylesheet">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/css/editablegrid.css" rel="stylesheet">
     <link href="/css/home.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -55,9 +55,9 @@
 	  data.push({id: 4, values: {"name":"Conway","firstname":"Coby","age":47,"height":1.96,"country":"za","email":"coby@conwayinc.com","freelance":true,"lastvisit":"01\/12\/2007"}});
 	  data.push({id: 5, values: {"name":"Shannon","firstname":"Rana","age":24,"height":1.56,"country":"nl","email":"ranna.shannon@hotmail.com","freelance":false,"lastvisit":"07\/10\/2009"}});
 	  data.push({id: 6, values: {"name":"Benton","firstname":"Jasmine","age":61,"height":1.71,"country":"ca","email":"jasmine.benton@yahoo.com","freelance":false,"lastvisit":"13\/01\/2009"}});
-	  data.push({id: 7, values: {"name":"Belletoise","firstname":"André","age":31,"height":1.84,"country":"be","email":"belletoise@kiloutou.be","freelance":true,"lastvisit":""}});
+	  data.push({id: 7, values: {"name":"Belletoise","firstname":"AndrÃ©","age":31,"height":1.84,"country":"be","email":"belletoise@kiloutou.be","freelance":true,"lastvisit":""}});
 	  data.push({id: 8, values: {"name":"Santa-Maria","firstname":"Martin","age":37,"height":1.80,"country":"br","email":"martin.sm@gmail.com","freelance":false,"lastvisit":"12\/06\/1995"}});
-	  data.push({id: 9, values: {"name":"Dieumerci","firstname":"Amédé","age":37,"height":1.81,"country":"ng","email":"dieumerci@gmail.com","freelance":true,"lastvisit":"05\/07\/2009"}});
+	  data.push({id: 9, values: {"name":"Dieumerci","firstname":"AmÃ©dÃ©","age":37,"height":1.81,"country":"ng","email":"dieumerci@gmail.com","freelance":true,"lastvisit":"05\/07\/2009"}});
 	  data.push({id: 10,values: {"name":"Morin","firstname":"Wanthus","age":46,"height":1.77,"country":"zw","email":"morin.x@yahoo.jsdata.com","freelance":false,"lastvisit":"04\/03\/2004"}});
 
 	  editableGrid = new EditableGrid("DemoGridJsData");
@@ -74,44 +74,42 @@
 	  
       <!-- Fixed navbar -->
       <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="home.html#">TrackVigor</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="home.html#">Home</a></li>
-                <!-- <li><a href="home.html#contact">@@TODO: Email Dks2 a bug / feature request</a></li>-->
-                <!-- <li class="dropdown">
-					 <a href="home.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					 <ul class="dropdown-menu">
-                       <li><a href="home.html#">Action</a></li>
-                       <li><a href="home.html#">Another action</a></li>
-                       <li><a href="home.html#">Something else here</a></li>
-                       <li class="divider"></li>
-                       <li class="nav-header">Nav header</li>
-                       <li><a href="home.html#">Separated link</a></li>
-                       <li><a href="home.html#">One more separated link</a></li>
-					 </ul>
-                  </li> -->
-              </ul> <!-- /nav -->
-            </div><!--/.nav-collapse -->
-          </div> <!--/container -->
-        </div> <!--/navbar-inner -->
-      </div> <!--/navbar navbar-fixed-top -->
+		<div class="navbar-inner">
+		  <div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="brand" href="#"><strong>TrackVigor</strong> &raquo; Easy Medical Records</a>
+			<div class="nav-collapse collapse">
+			  <ul class="nav">
+				<!--
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li class="nav-header">Nav header</li>
+					<li><a href="#">Separated link</a></li>
+					<li><a href="#">One more separated link</a></li>
+				  </ul>
+				</li>
+				-->
+			  </ul><!-- /.nav -->
+			</div><!--/.nav-collapse -->
+		  </div> <!--/.container -->
+		</div> <!--/.navbar-inner -->
+	  </div><!-- .navbar-fixed-top -->
 	  
 	  <!-- Begin page content -->
 	  <div id="container">
-		<div class="page-header">
-		  <h1>TrackVigor &middot; Easy Medical Records</h1>
-		</div><!-- /page-header -->
-		
 		<div id="tablecontent"></div>
-
 	  </div> <!-- /container -->
 	  
 	  <div id="push"></div>
