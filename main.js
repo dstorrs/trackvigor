@@ -9,7 +9,7 @@ var file = new(static.Server)(__dirname + '/templates/assets');
 function get_url_path(req) { return url.parse(req.url).pathname }
 
 http.createServer(function(req, res) {
-	if ( ! get_url_path( req ).match(/\/favicon\./) ) { u.log("Routing a request for: " + get_url_path( req )); }
+	// if ( ! get_url_path( req ).match(/\/favicon\./) ) { u.log("Routing a request for: " + get_url_path( req )); }
 
 	//    Add the listeners
 	req.addListener(
